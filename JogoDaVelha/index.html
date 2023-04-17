@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<!-- configuração padrão -->
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="velha.css">
+  <link rel="icon" href="img/JogoDaVelha.png">
+</head>
+
+<body>
+  <h1>Jogo da velha</h1>
+
+  <!-- botão usado para alterar o tema do site (dark/light) -->
+  <div id="dark"><button class="escuro" id="modo-escuro">Modo escuro</button></div>
+
+  <table>
+    <!-- 1 tr= linha horizontal | 1 td= quadrado -->
+    <form action="">
+      <tr>
+        <td class="td"></td>
+        <td class="td"></td>
+        <td class="td"></td>
+      </tr>
+      <tr>
+        <td class="td"></td>
+        <td class="td"></td>
+        <td class="td"></td>
+      </tr>
+      <tr>
+        <td class="td"></td>
+        <td class="td"></td>
+        <td class="td"></td>
+      </tr>
+    </form>
+  </table>
+
+  <div>
+    <p>É a vez do jogador <span id="jogador-vez">X</span></p>
+
+    <!-- o parágrafo infracitado será usado para informar o ganhador da partida -->
+    <p id="resultado"></p>
+
+    <!-- logo abaixo, o botão padrão para resetar o jogo -->
+    <div class="reinicia">
+      <button class="reset" id="reset">Reiniciar</button>
+    </div>
+  </div>
+
+  <script src="jogo.js"></script>
+</body>
+
+</html>
